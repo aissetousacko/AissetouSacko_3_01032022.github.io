@@ -1,0 +1,9 @@
+#location {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    &__icon {
+        display: flex;
+        align-items: center;
+    }
+}
