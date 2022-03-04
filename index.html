@@ -4,28 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="public/css/style.css">
-    <title>ohmyfood</title>
+    <title>Ohmyfood</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="img__header">
-            <img src="public/images/logo/ohmyfood.png" alt="logo">
+        <div id="img__header">
+            <img src="public/images/logo/ohmyfood.png" alt="logo" id="logo">
         </div>
     </header>
     <!-- Main content -->
     <main>
         <!-- Location -->
-        <div id="location">
+        <section id="location">
             <div id="location__icon">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
             <p id="location__text">
                 Paris, Belleville
             </p>
-        </div>
+        </section>
+
+        <!-- Get started -->
+        <section id="get-started">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvez des restaurants d'exception, sélectionnés par nos soins</p>
+            <a href="#" id="get-started__btn">
+                <div class="btn">Explorer nos restaurants</div>
+            </a>
+        </section>
+
+        <!-- How to use -->
+        <section class="how-to">
+            <h2>Fonctionnement</h2>
+            <div class="how-to__cards-display">
+                <div class="how-to__card">
+                    <div class="how-to__step-tag">1</div>
+                    <div class="how-to__step">
+                        <div class="how-to__step-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="how-to__step-text">
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-to__card">
+                    <div class="how-to__step-tag">2</div>
+                    <div class="how-to__step">
+                        <div class="how-to__step-icon">
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <div class="how-to__step-text">
+                            <p>Composez votre menu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-to__card">
+                    <div class="how-to__step-tag">3</div>
+                    <div class="how-to__step how-to__step--light">
+                        <div class="how-to__step-icon how-to__step-icon--light">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="how-to__step-text">
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

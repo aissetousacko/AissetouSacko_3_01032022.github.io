@@ -6,19 +6,135 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.btn {
+  color: #fff;
+  width: fit-content;
+  padding: 10px 20px;
+  /* font-weight: 600; */
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 30px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  #img__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #logo {
+    width: 45%;
+  }
+}
+
 #location {
   display: flex;
   justify-content: center;
-  background-color: gray;
+  background-color: #ebebeb;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  margin-bottom: 0;
 }
 #location__icon {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  #location__icon {
+    margin-right: 20px;
+  }
+}
+#location__text {
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  #location__text {
+    font-size: 18px;
+  }
+}
+
+#get-started {
+  margin-top: 0;
+  padding: 20px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+#get-started p {
+  color: #4d4d4d;
+}
+#get-started a {
+  text-decoration: none;
+}
+#get-started__btn {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.how-to {
+  padding: 40px 20px;
+}
+.how-to__cards-display {
+  display: flex;
+  flex-direction: column;
+}
+.how-to__card {
+  display: flex;
+  margin: 10px 0;
+}
+.how-to__step-tag {
+  background-color: #9356DC;
+  color: #fff;
+  padding: 5px;
+  width: 18px;
+  height: 18px;
+  margin-right: -10px;
+  margin-top: 20px;
+  z-index: 1;
+  border-radius: 100%;
+  text-align: center;
+}
+.how-to__step {
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.how-to__step--light {
+  background-color: #f2eafb;
+}
+.how-to__step-icon {
+  color: #666666;
+  padding: 0px;
+}
+.how-to__step-icon--light {
+  color: #9356DC;
+}
+.how-to__step-text {
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+.btn {
+    color: $color-white;
+    width: fit-content;
+    padding: 10px 20px;
+    /* font-weight: 600; */
+    background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border-radius: 30px;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+}
