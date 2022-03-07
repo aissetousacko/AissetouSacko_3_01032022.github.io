@@ -1,0 +1,21 @@
+footer {
+    background-color: $color-lightdark;
+    color: $color-white;
+    padding: 20px;
+    h1 {
+        margin: auto;
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+            margin: 0;
+            padding: 10px 5px;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
