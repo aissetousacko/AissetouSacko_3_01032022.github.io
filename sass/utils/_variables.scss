@@ -6,5 +6,6 @@ $color-white: #fff;
 $color-grey: #F5F5F5;
 $color-darkgrey: lighten(black, 40%);
 $color-lightdark: #353535;
+$color-gradient: linear-gradient(170deg, $color-secondary, $color-primary);
 
 $box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.20);
