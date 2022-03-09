@@ -14,7 +14,6 @@ h1 {
   color: #fff;
   width: fit-content;
   padding: 10px 20px;
-  /* font-weight: 600; */
   background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
   border-radius: 30px;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
@@ -30,26 +29,27 @@ header {
   justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-  #img__header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
+#img__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-@media screen and (max-width: 767px) {
-  #logo {
-    width: 45%;
-  }
+#logo {
+  width: 45%;
 }
 
 footer {
   background-color: #353535;
   color: #fff;
   padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
 }
 footer h1 {
   margin: auto;
@@ -78,19 +78,11 @@ footer ul li i {
 #location__icon {
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 767px) {
-  #location__icon {
-    margin-right: 20px;
-  }
+  margin-right: 20px;
 }
 #location__text {
   font-weight: 600;
-}
-@media screen and (max-width: 767px) {
-  #location__text {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 
 #get-started {
@@ -115,13 +107,26 @@ footer ul li i {
 .how-to {
   padding: 40px 20px;
 }
+@media screen and (min-width: 768px) {
+  .how-to h2 {
+    text-align: center;
+  }
+}
 .how-to__cards-display {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .how-to__card {
   display: flex;
   margin: 10px 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .how-to__card {
+    width: 70%;
+  }
 }
 .how-to__step-tag {
   background-color: #9356DC;
@@ -140,8 +145,6 @@ footer ul li i {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-left: 30px;
-  padding-right: 30px; */
   width: 90%;
   border-radius: 20px;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
@@ -184,6 +187,11 @@ footer ul li i {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card__img {
+    height: 300px;
+  }
 }
 .card__container {
   display: flex;

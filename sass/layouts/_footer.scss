@@ -2,6 +2,9 @@ footer {
     background-color: $color-lightdark;
     color: $color-white;
     padding: 20px;
+    @include tablet {
+        text-align: center;
+    }
     h1 {
         margin: auto;
         font-size: 20px;
