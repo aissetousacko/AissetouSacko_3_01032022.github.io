@@ -1,10 +1,39 @@
 .restaurant-cover img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     position: relative;
 }
 
-#menu {
+.menu {
+    position: relative;
+    bottom: 60px;
     background-color: $color-grey;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &__title {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            margin-left: 10px;
+        }
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 30px;
+    }
+    &__meals {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card {
+        width: 90%;
+        background-color: $color-white;
+    }
+
 }
+
