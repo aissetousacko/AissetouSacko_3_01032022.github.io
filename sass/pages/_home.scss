@@ -109,12 +109,15 @@
     width: 90%;
     background-color: $color-white;
     box-shadow: $box-shadow;
+    text-decoration: none;
+    color: black;
     @include desktop {
         width: 45%;
     }
     &__display {
+        display: flex;
+        flex-direction: column;
         @include desktop {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
@@ -161,26 +164,5 @@
         align-items: center;
         margin: 0;
         font-size: 30px;
-        &--empty, &--full {
-            position: relative;
-            right: 10%;
-            transition: all .5s ease-out;
-        }
-        &--full {
-            right: 60%;
-            background-image: $color-gradient;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            opacity: 0;
-            &:hover {
-                opacity: 1;
-            }
-        }
-        &--empty {
-            &:hover {
-                opacity: 0;
-            }
-        }
     }
 }

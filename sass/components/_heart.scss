@@ -1,0 +1,23 @@
+.card__icon {
+    &--empty, &--full {
+        position: relative;
+        right: 10%;
+        transition: all .5s ease-out;
+    }
+    &--full {
+        right: 60%;
+        background-image: $color-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &--empty {
+        &:hover {
+            opacity: 0;
+        }
+    }
+}

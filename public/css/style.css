@@ -10,6 +10,11 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .btn {
   color: #fff;
   width: fit-content;
@@ -24,6 +29,26 @@ h1 {
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.2);
 }
 
+.card__icon--empty, .card__icon--full {
+  position: relative;
+  right: 10%;
+  transition: all 0.5s ease-out;
+}
+.card__icon--full {
+  right: 60%;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.card__icon--full:hover {
+  opacity: 1;
+}
+.card__icon--empty:hover {
+  opacity: 0;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -36,7 +61,6 @@ h1 {
   align-items: center;
   z-index: 10;
   animation: uncover 3.5s both;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .dot {
@@ -90,16 +114,28 @@ header {
   justify-content: center;
 }
 
-#img__header {
+.header__img {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 15px;
 }
+.header__arrow {
+  width: 50px;
+  height: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
 
-#logo {
-  width: 45%;
+.logo {
+  width: 50%;
 }
 
 footer {
@@ -241,15 +277,20 @@ footer ul li i {
   width: 90%;
   background-color: #fff;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
 }
 @media screen and (min-width: 992px) {
   .card {
     width: 45%;
   }
 }
+.card__display {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 992px) {
   .card__display {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -299,24 +340,16 @@ footer ul li i {
   margin: 0;
   font-size: 30px;
 }
-.card__icon--empty, .card__icon--full {
+
+.restaurant-cover img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   position: relative;
-  right: 10%;
-  transition: all 0.5s ease-out;
 }
-.card__icon--full {
-  right: 60%;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
-}
-.card__icon--full:hover {
-  opacity: 1;
-}
-.card__icon--empty:hover {
-  opacity: 0;
+
+#menu {
+  background-color: #F5F5F5;
 }
 
 /*# sourceMappingURL=style.css.map */
