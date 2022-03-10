@@ -26,6 +26,8 @@ h1 {
 
 .loader {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -33,7 +35,8 @@ h1 {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  animation: uncover 4s 0.5s forwards;
+  animation: uncover 3.5s both;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .dot {
@@ -68,11 +71,18 @@ h1 {
   0% {
     opacity: 1;
   }
-  99% {
+  90% {
     opacity: 1;
+  }
+  95% {
+    opacity: 0.8;
+  }
+  99% {
+    opacity: 0.3;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 header {
