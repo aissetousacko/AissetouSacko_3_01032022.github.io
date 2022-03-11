@@ -29,10 +29,44 @@
     &__meals {
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
+        h3 {
+            margin-left: 20px;
+            font-weight: 300;
+            border-bottom: 3px solid $color-tertiary;
+            width: 12%;
+            padding-bottom: 5px;
+        }
     }
     &__card {
         width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
         background-color: $color-white;
+        margin: 5px auto;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        &--text {
+            h4, p {
+                margin: 0;
+                padding: 3px 0;
+            }
+        }
+        &--price {
+            display: flex;
+            justify-content: center;
+                align-items: center;
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 3px;
+        padding-bottom: 30px;
     }
 
 }
