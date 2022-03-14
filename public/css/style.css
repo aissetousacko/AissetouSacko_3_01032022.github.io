@@ -16,6 +16,16 @@ a {
   color: black;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .btn {
   color: #fff;
   width: fit-content;
@@ -420,6 +430,7 @@ footer ul li i {
   margin: 5px auto;
   border-radius: 15px;
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+  animation: appear 1s both ease;
 }
 .menu__card--text h4, .menu__card--text p {
   margin: 0;
@@ -437,6 +448,16 @@ footer ul li i {
   display: flex;
   justify-content: center;
   padding-top: 30px;
+}
+
+.appear--1 {
+  animation-delay: 0.2s;
+}
+.appear--2 {
+  animation-delay: 0.4s;
+}
+.appear--3 {
+  animation-delay: 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */

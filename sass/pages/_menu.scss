@@ -64,6 +64,7 @@
         margin: 5px auto;
         border-radius: 15px;
         box-shadow: $box-shadow;
+        animation: appear 1s both ease;
         &--text {
             h4, p {
                 margin: 0;
@@ -87,3 +88,14 @@
 
 }
 
+.appear {
+    &--1 {
+        animation-delay: 0.2s;
+    }
+    &--2 {
+        animation-delay: 0.4s;
+    }
+    &--3 {
+        animation-delay: 0.6s;
+    }
+}
