@@ -409,7 +409,7 @@ footer ul li i {
     width: 50%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
   .menu__meals {
     width: 30%;
   }
@@ -438,18 +438,20 @@ footer ul li i {
 }
 .menu-card__text {
   padding: 10px;
-  width: 81%;
+  width: 80%;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card__text h4, .menu-card__text p {
   margin: 0;
   padding: 3px 0;
 }
 .menu-card__price {
+  width: 20%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px 20px 10px 10px;
 }
 .menu-card__price h4 {
   margin: 0;
@@ -461,7 +463,7 @@ footer ul li i {
   width: 20%;
   background-color: #99E2D0;
   color: #fff;
-  margin-right: -25%;
+  margin-right: -20%;
   transition: margin-right 0.5s ease-in-out;
   cursor: pointer;
 }
