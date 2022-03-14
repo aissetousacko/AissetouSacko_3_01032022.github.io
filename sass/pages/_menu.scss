@@ -55,29 +55,48 @@
             padding-bottom: 5px;
         }
     }
-    &__card {
+    &-card {
         width: 90%;
-        padding: 10px;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         background-color: $color-white;
         margin: 5px auto;
         border-radius: 15px;
         box-shadow: $box-shadow;
+        cursor: pointer;
+        overflow: hidden;
         animation: appear 1s both ease;
-        &--text {
+        &__description {
+            display: flex;
+        }
+        &__text {
+            padding: 10px;
+            width: 81%;
+            overflow: hidden;
             h4, p {
                 margin: 0;
                 padding: 3px 0;
             }
         }
-        &--price {
+        &__price {
             display: flex;
             justify-content: center;
-                align-items: center;
+            align-items: center;
+            padding: 10px;
             h4 {
                 margin: 0;
             }
+        }
+        &__check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            background-color: $color-tertiary;
+            color: $color-white;
+            margin-right: -25%;
+            transition: margin-right 0.5s ease-in-out;
+            cursor: pointer;
         }
     }
     &__btn {
@@ -86,6 +105,10 @@
         padding-top: 30px;
     }
 
+}
+
+.menu-card:hover .menu-card__check {
+    margin-right: 0;
 }
 
 .appear {
