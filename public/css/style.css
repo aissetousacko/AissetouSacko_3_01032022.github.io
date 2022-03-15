@@ -26,6 +26,14 @@ a {
     opacity: 1;
   }
 }
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   color: #fff;
   width: fit-content;
@@ -391,11 +399,12 @@ footer ul li i {
 }
 .menu__title h1 {
   margin-left: 10px;
+  font-size: 28px;
 }
 .menu__icon {
   display: flex;
   align-items: center;
-  margin: 0;
+  margin-left: 10px;
   font-size: 30px;
 }
 .menu__meals {
@@ -449,7 +458,7 @@ footer ul li i {
   text-overflow: ellipsis;
 }
 .menu-card__price {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -469,14 +478,16 @@ footer ul li i {
   transition: margin-right 0.5s ease-in-out;
   cursor: pointer;
 }
+.menu-card:hover .menu-card__check {
+  margin-right: 0;
+}
+.menu-card:hover .fa-circle-check {
+  animation: icon-rotate 0.5s both ease-in;
+}
 .menu__btn {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-}
-
-.menu-card:hover .menu-card__check {
-  margin-right: 0;
 }
 
 .appear--1 {

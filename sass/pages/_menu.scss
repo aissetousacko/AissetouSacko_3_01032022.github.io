@@ -28,12 +28,13 @@
         font-size: 20px;
         h1{
             margin-left: 10px;
+            font-size: 28px;
         }
     }
     &__icon {
         display: flex;
         align-items: center;
-        margin: 0;
+        margin-left: 10px;
         font-size: 30px;
     }
     &__meals {
@@ -83,7 +84,7 @@
             }
         }
         &__price {
-            width: 10%;
+            width: 15%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -103,6 +104,14 @@
             transition: margin-right 0.5s ease-in-out;
             cursor: pointer;
         }
+        &:hover {
+            .menu-card__check {
+                margin-right: 0;
+            }
+            .fa-circle-check {
+                animation: icon-rotate 0.5s both ease-in;
+            }
+        }
     }
     &__btn {
         display: flex;
@@ -112,9 +121,6 @@
 
 }
 
-.menu-card:hover .menu-card__check {
-    margin-right: 0;
-}
 
 .appear {
     &--1 {
