@@ -123,16 +123,18 @@
         }
     }
     &__tag-new {
-        width: fit-content;
-        display: inline;
         position: relative;
-        top: 75px;
-        left: 70%;
-        background-color: $color-tertiary;
-        color: $color-green;
-        font-weight: 700;
-        padding: 10px;
-        border-radius: 2px;
+        &::before {
+            content: "Nouveau";
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            background-color: $color-tertiary;
+            color: $color-green;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 2px;
+        }
     }
     &__img {
         width: 100%;

@@ -320,11 +320,13 @@ footer ul li i {
   }
 }
 .card__tag-new {
-  width: fit-content;
-  display: inline;
   position: relative;
-  top: 75px;
-  left: 70%;
+}
+.card__tag-new::before {
+  content: "Nouveau";
+  position: absolute;
+  top: 18px;
+  right: 20px;
   background-color: #99E2D0;
   color: #008766;
   font-weight: 700;
