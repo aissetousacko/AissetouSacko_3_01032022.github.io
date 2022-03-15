@@ -72,15 +72,18 @@
         &__text {
             padding: 10px;
             width: 80%;
+            white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
+            
             h4, p {
                 margin: 0;
                 padding: 3px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
         &__price {
-            width: 20%;
+            width: 10%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;

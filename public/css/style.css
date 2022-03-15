@@ -439,15 +439,17 @@ footer ul li i {
 .menu-card__text {
   padding: 10px;
   width: 80%;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu-card__text h4, .menu-card__text p {
   margin: 0;
   padding: 3px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card__price {
-  width: 20%;
+  width: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
