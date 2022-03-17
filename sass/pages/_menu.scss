@@ -59,7 +59,6 @@
     &-card {
         width: 90%;
         display: flex;
-        /* justify-content: space-between; */
         background-color: $color-white;
         margin: 5px auto;
         border-radius: 15px;
@@ -131,5 +130,8 @@
     }
     &--3 {
         animation-delay: 0.6s;
+    }
+    &--4 {
+        animation-delay: 0.8s;
     }
 }
