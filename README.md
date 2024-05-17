@@ -4,7 +4,8 @@
 
 
 ## General infos
-OhMyFood is a site that lists the menus of gourmet restaurants. Here, we focus on the integration of the model and the animations.
+OhMyFood is a site that lists the menus of gourmet restaurants. Here, we focus on the integration of the model and the animations. <br/>
+[View the project](https://aissetousacko.github.io/ohmyfood/)
 
 
 
