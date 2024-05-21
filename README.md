@@ -3,7 +3,7 @@
 </p>
 
 
-## General infos
+## Presentation
 OhMyFood is a site that lists the menus of gourmet restaurants. Here, we focus on the integration of the model and the animations. <br/>
 [View the project](https://aissetousacko.github.io/ohmyfood/)
 
@@ -15,5 +15,5 @@ This project is created with :
 * CSS (SASS)
 
 
-## Sources
-This project is a study project carried out with Openclassrooms
+### Author
+Aïssetou SACKO - This project is a study project carried out with Openclassrooms
