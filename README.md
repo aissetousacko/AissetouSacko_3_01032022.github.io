@@ -15,5 +15,5 @@ This project is created with :
 * CSS (SASS)
 
 
-### Author
+## Author
 Aïssetou SACKO - This project is a study project carried out with Openclassrooms
